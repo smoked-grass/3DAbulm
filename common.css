@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 100vh;
+}
+
+.perspective {
+    perspective: 800px;
+
+}
+
+.container {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 133px;
+    height: 200px;
+    animation: rotate 20s linear infinite;
+
+}
+
+
+
+.perspective .container img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 133px;
+    height: 200px;
+    -webkit-box-reflect: below 15px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+
+}
+
+.perspective .container img:nth-child(1) {
+    transform: rotateY(36deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(3) {
+    transform: rotateY(108deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(4) {
+    transform: rotateY(144deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(5) {
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(6) {
+    transform: rotateY(216deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(7) {
+    transform: rotateY(252deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(8) {
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(9) {
+    transform: rotateY(324deg) translateZ(300px);
+}
+
+.perspective .container img:nth-child(10) {
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
